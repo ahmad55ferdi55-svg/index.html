@@ -1,0 +1,152 @@
+/* Import Font dari Google Fonts */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header {
+    background: linear-gradient(135deg, #007bff, #0056b3); /* Warna Biru Khas Teknologi */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0 0 5px 0;
+    font-weight: 700;
+}
+
+header p {
+    font-weight: 300;
+}
+
+main {
+    padding: 40px 0;
+}
+
+/* Card Profil */
+.profile-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    margin-bottom: 30px;
+    border-top: 5px solid #007bff;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid #e0f7fa;
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+}
+
+/* Tombol Detail */
+#detail-button {
+    background-color: #28a745; /* Warna Hijau Khas Sukses */
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    margin-top: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+#detail-button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+/* Detail & Skill Section */
+#details h2 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.skill-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item h3 {
+    color: #007bff;
+    margin-top: 0;
+}
+
+/* Utility Class */
+.hidden {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.visible {
+    display: block;
+    opacity: 1;
+}
+
+.contact-note {
+    text-align: center;
+    margin-top: 40px;
+    font-style: italic;
+    color: #6c757d;
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+}
